@@ -4,36 +4,47 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(248, 228, 201);
+}
+
+.container{
+    height: 100vh;
+}
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: black;
-    height: 3rem;
-    padding: 0 2.5rem;
+    padding: 1rem;
     color: white;
 }
 
-form {
-    width: 20rem;
+.navbar h1{
+    flex: 3;
+    margin-left: 1rem;
+}
 
+form {
+    flex: 1;
 }
 
 form .inp {
-    margin-right: 0.2rem;
-    padding: 0.4rem;
-    padding-left: 0.9rem;
-    border-radius: 7px;
-    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
     background-color: azure;
 }
 
 form .btn {
-    padding: 0.4rem 0.6rem;
+    padding: 0.4rem;
     background-color: red;
     cursor: pointer;
     font-weight: 400;
-    border-radius: 7px;
+    border-radius: 0.4rem;
+}
+
+main{
+    height: 70vh;
+    overflow-x : hidden;
+    overflow-y: scroll;
 }
 
 main h2 {
@@ -41,7 +52,6 @@ main h2 {
     height: 3rem;
     font-size: 1.5rem;
     padding: 0.5rem 0;
-    background-color: rgb(248, 228, 201);
 }
 
 section {
@@ -63,14 +73,20 @@ section {
     margin: 1.5rem 0;
 }
 
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 @media screen and (max-width: 680px) {
     .navbar {
 
         flex-direction: column;
-        height: 7rem;
+        /* height: 7rem; */
         align-items: center;
         padding: 1.2rem 0;
-        width: 100vw;
+        /* width: 100vw; */
     }
 
     main h2 {
@@ -78,9 +94,9 @@ section {
     }
 
     section {
-        height: 100vh;
+        /* height: 100vh; */
         padding: 0.7rem 0;
-        width: 98%;
+        /* width: 98%; */
 
     }
 
@@ -91,16 +107,10 @@ section {
         /* flex-wrap: wrap; */
     }
 
-    
-
     .all-about-info p {
         font-size: 1.2rem;
         padding-left: 0.2rem;
         width: 100%;
-    }
-    footer {
-        position: relative;
-        bottom: 0;
     }
 }
 
